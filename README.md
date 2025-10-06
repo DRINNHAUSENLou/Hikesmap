@@ -11,3 +11,4 @@ Ci-dessous une vidéo représentant mon site.
 
 https://youtu.be/_qUf-B2ckVQ 
 
+<img width="638" height="354" alt="Capture d'écran 2025-10-06 163556" src="https://github.com/user-attachments/assets/aaed9cb9-9cea-4fe2-9481-04278499b57e" />
