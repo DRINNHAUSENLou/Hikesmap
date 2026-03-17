@@ -1,20 +1,84 @@
-# Hikesmap
+<h1 align="center">Kollab</h1>
 
-Hikesmap est un site fictif développé avec Symfony, relié à une base de données, permettant de répertorier les randonnées en Alsace de manière collaborative.
-Le site intègre un système de connexion, un forum favorisant les échanges entre les utilisateurs, ainsi que l’API Google Maps, utilisée pour afficher et localiser les différents points clés et itinéraires sur une carte interactive.
+<p align="center">
+Kollab est une plateforme collaborative de gestion de projets développée avec <strong>Laravel</strong>,  
+reliée à une base de données <strong>MySQL</strong>, permettant aux équipes d'organiser  
+et de suivre leurs projets selon une méthodologie <strong>Agile</strong> et <strong>Kanban</strong>.
+</p>
 
-Les visiteurs peuvent consulter les randonnées, lire leurs descriptions et parcourir le forum.
-Les utilisateurs connectés peuvent ajouter des points clés (lieux d’intérêt), proposer leurs propres randonnées et participer aux discussions du forum.
-L’administrateur gère l’ensemble du site : il modère les points clés, les randonnées et le forum.
+<p align="center">
+Le site intègre un système d'authentification sécurisé,<br>
+un système de notification en temps réel,<br>
+et propose une gestion hiérarchisée du travail : <strong>Sprints → Épics → Tâches</strong>.
+</p>
 
-Ci-dessous une vidéo représentant mon site.
+<p>
+Les visiteurs peuvent consulter la présentation du site.<br>
+Les utilisateurs connectés peuvent créer des projets, gérer les collaborateurs, organiser le travail et visualiser l'avancement via un tableau Kanban et une roadmap.<br>
+L’administrateur gère l’ensemble de la plateforme et peut modérer les utilisateurs et projets.
+</p>
 
-https://youtu.be/_qUf-B2ckVQ 
+<h2>Actions à faire pour mettre en place le projet</h2>
 
-<img width="638" height="354" alt="Capture d'écran 2025-10-06 163556" src="https://github.com/user-attachments/assets/aaed9cb9-9cea-4fe2-9481-04278499b57e" />
+<ul>
+  <li>
+    <strong>Cloner le dépôt :</strong><br>
+    <pre><code>git clone https://github.com/DRINNHAUSENLou/Kollab.git
+cd Kollab</code></pre>
+  </li>
 
-<h3 align="left">Langages et Outils:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://symfony.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/symfony/symfony-original-wordmark.svg" alt="symfony" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a>  <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-</a> </a> </p>
+  <li>
+    <strong>Installer les dépendances PHP et Node :</strong><br>
+    <pre><code>composer install
+npm install</code></pre>
+  </li>
 
+  <li>
+    <strong>Créer le fichier .env et générer la clé de l’application :</strong><br>
+    <pre><code>cp .env.example .env
+php artisan key:generate</code></pre>
+  </li>
+
+  <li>
+    <strong>Créer la base de données :</strong> <br>
+    Créer une base nommée <strong>kollab</strong> dans phpMyAdmin ou via MySQL.
+  </li>
+
+  <li>
+    <strong>Lancer les migrations et compiler les assets :</strong><br>
+    <pre><code>php artisan migrate
+npm run build</code></pre>
+  </li>
+
+  <li>
+    <strong>Démarrer le serveur local :</strong><br>
+    <pre><code>php artisan serve</code></pre>
+  </li>
+
+  <li>
+    <strong>Accéder à l’application :</strong><br>
+    <a href="http://localhost:8000">http://localhost:8000</a>
+  </li>
+</ul>
+
+<h3 align="left">Langages et Outils :</h3>
+<p align="left">
+  <a href="https://laravel.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain.svg" alt="laravel" width="40" height="40"/>
+  </a>
+  <a href="https://www.php.net" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/>
+  </a>
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
+  </a>
+  <a href="https://vuejs.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/>
+  </a>
+  <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-plain.svg" alt="tailwindcss" width="40" height="40"/>
+  </a>
+  <a href="https://www.javascript.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+  </a>
+</p>
