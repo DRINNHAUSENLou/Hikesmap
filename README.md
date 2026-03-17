@@ -1,22 +1,13 @@
 <h1 align="center">Kollab</h1>
 
 <p align="center">
-Kollab est une plateforme collaborative de gestion de projets développée avec <strong>Laravel</strong>,  
-reliée à une base de données <strong>MySQL</strong>, permettant aux équipes d'organiser  
-et de suivre leurs projets selon une méthodologie <strong>Agile</strong> et <strong>Kanban</strong>.
+Kollab est une plateforme collaborative de gestion de projets développée avec Laravel, relié à une base de données MySQL, permettant aux équipes d'organiser et de suivre leurs projets selon une méthodologie Agile et Kanban.
+Le site intègre un système d'authentification sécurisé, un système de notification en temps réel, et propose une gestion hiérarchisée du travail : **Sprints** contenant des **Épics**, eux-mêmes divisés en **Tâches**.
+
+Les visiteurs peuvent consulter la présentation du site.
+Les utilisateurs connectés peuvent créer des projets et deviennent automatiquement le **Chef de projet**. Depuis ce rôle, ils peuvent ajouter des collaborateurs au projet et leur attribuer des rôles : **Éditeur** (peut modifier et gérer les tâches) ou **Lecteur** (consultation uniquement). Ils organisent le travail via une structure flexible : créer des sprints avec des dates définies, ajouter des épics pour les grandes fonctionnalités, puis décomposer ces épics en tâches granulaires. Ils visualisent l'avancement via un tableau **Kanban** interactif (affichage des tâches par statut) et une **roadmap** calendaire des sprints.
 </p>
 
-<p align="center">
-Le site intègre un système d'authentification sécurisé,<br>
-un système de notification en temps réel,<br>
-et propose une gestion hiérarchisée du travail : <strong>Sprints → Épics → Tâches</strong>.
-</p>
-
-<p>
-Les visiteurs peuvent consulter la présentation du site.<br>
-Les utilisateurs connectés peuvent créer des projets, gérer les collaborateurs, organiser le travail et visualiser l'avancement via un tableau Kanban et une roadmap.<br>
-L’administrateur gère l’ensemble de la plateforme et peut modérer les utilisateurs et projets.
-</p>
 
 <h2>Actions à faire pour mettre en place le projet</h2>
 
